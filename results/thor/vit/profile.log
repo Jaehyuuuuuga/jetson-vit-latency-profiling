@@ -1,0 +1,457 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v101602] [b10] # /usr/bin/trtexec --loadEngine=results/localhost.localdomain/vit/model.engine --iterations=300 --duration=0 --dumpProfile --separateProfileRun --profilingVerbosity=detailed --exportProfile=results/localhost.localdomain/vit/profile.json --exportLayerInfo=results/localhost.localdomain/vit/layers.json
+[11/20/2026-00:21:39] [I] TF32 is enabled by default. Add --noTF32 flag to further improve accuracy with some performance cost.
+[11/20/2026-00:21:39] [I] === Model Options ===
+[11/20/2026-00:21:39] [I] Format: *
+[11/20/2026-00:21:39] [I] Model: 
+[11/20/2026-00:21:39] [I] Output:
+[11/20/2026-00:21:39] [I] 
+[11/20/2026-00:21:39] [I] === System Options ===
+[11/20/2026-00:21:39] [I] Device: 0
+[11/20/2026-00:21:39] [I] DLACore: 
+[11/20/2026-00:21:39] [I] Loaded static plugins:
+[11/20/2026-00:21:39] [I] setPluginsToSerialize:
+[11/20/2026-00:21:39] [I] dynamicPlugins:
+[11/20/2026-00:21:39] [I] ignoreParsedPluginLibs: 0
+[11/20/2026-00:21:39] [I] 
+[11/20/2026-00:21:39] [I] === Inference Options ===
+[11/20/2026-00:21:39] [I] Batch: Explicit
+[11/20/2026-00:21:39] [I] Input inference shapes: model
+[11/20/2026-00:21:39] [I] Iterations: 300
+[11/20/2026-00:21:39] [I] Duration: 0s (+ 200ms warm up)
+[11/20/2026-00:21:39] [I] Sleep time: 0ms
+[11/20/2026-00:21:39] [I] Idle time: 0ms
+[11/20/2026-00:21:39] [I] Inference Streams: 1
+[11/20/2026-00:21:39] [I] ExposeDMA: Disabled
+[11/20/2026-00:21:39] [I] Data transfers: Enabled
+[11/20/2026-00:21:39] [I] Spin-wait: Disabled
+[11/20/2026-00:21:39] [I] Multithreading: Disabled
+[11/20/2026-00:21:39] [I] CUDA Graph: Disabled
+[11/20/2026-00:21:39] [I] Separate profiling: Enabled
+[11/20/2026-00:21:39] [I] Time Deserialize: Disabled
+[11/20/2026-00:21:39] [I] Time Refit: Disabled
+[11/20/2026-00:21:39] [I] NVTX verbosity: 2
+[11/20/2026-00:21:39] [I] Persistent Cache Ratio: 0
+[11/20/2026-00:21:39] [I] Optimization Profile Index: 0
+[11/20/2026-00:21:39] [I] Weight Streaming Budget: 100.000000%
+[11/20/2026-00:21:39] [I] Inputs:
+[11/20/2026-00:21:39] [I] Debug Tensor Save Destinations:
+[11/20/2026-00:21:39] [I] Dump All Debug Tensor in Formats: 
+[11/20/2026-00:21:39] [I] === Reporting Options ===
+[11/20/2026-00:21:39] [I] Verbose: Disabled
+[11/20/2026-00:21:39] [I] Averages: 10 inferences
+[11/20/2026-00:21:39] [I] Percentiles: 90,95,99
+[11/20/2026-00:21:39] [I] Dump refittable layers:Disabled
+[11/20/2026-00:21:39] [I] Dump output: Disabled
+[11/20/2026-00:21:39] [I] Profile: Enabled
+[11/20/2026-00:21:39] [I] Export timing to JSON file: 
+[11/20/2026-00:21:39] [I] Export output to JSON file: 
+[11/20/2026-00:21:39] [I] Export profile to JSON file: results/localhost.localdomain/vit/profile.json
+[11/20/2026-00:21:39] [I] 
+[11/20/2026-00:21:39] [I] === Device Information ===
+[11/20/2026-00:21:39] [I] Available Devices: 
+[11/20/2026-00:21:39] [I]   Device 0: "NVIDIA Thor" UUID: GPU-a7c66ad2-6dbb-0ab8-c1a2-37ba6dba3600
+[11/20/2026-00:21:39] [I] Selected Device: NVIDIA Thor
+[11/20/2026-00:21:39] [I] Selected Device ID: 0
+[11/20/2026-00:21:39] [I] Selected Device UUID: GPU-a7c66ad2-6dbb-0ab8-c1a2-37ba6dba3600
+[11/20/2026-00:21:39] [I] Compute Capability: 11.0
+[11/20/2026-00:21:39] [I] SMs: 20
+[11/20/2026-00:21:39] [I] Device Global Memory: 125809 MiB
+[11/20/2026-00:21:39] [I] Shared Memory per SM: 228 KiB
+[11/20/2026-00:21:39] [I] Memory Bus Width: 256 bits (ECC disabled)
+[11/20/2026-00:21:39] [I] Application Compute Clock Rate: 1.04858 GHz
+[11/20/2026-00:21:39] [I] Application Memory Clock Rate: 4.266 GHz
+[11/20/2026-00:21:39] [I] 
+[11/20/2026-00:21:39] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[11/20/2026-00:21:39] [I] 
+[11/20/2026-00:21:39] [I] TensorRT version: 10.16.2
+[11/20/2026-00:21:39] [I] Loading standard plugins
+[11/20/2026-00:21:39] [I] [TRT] Loaded engine size: 24 MiB
+[11/20/2026-00:21:39] [I] Engine deserialized in 0.0231044 sec.
+[11/20/2026-00:21:39] [I] [TRT] [MS] Running engine with multi stream info
+[11/20/2026-00:21:39] [I] [TRT] [MS] Number of aux streams is 2
+[11/20/2026-00:21:39] [I] [TRT] [MS] Number of total worker streams is 3
+[11/20/2026-00:21:39] [I] [TRT] [MS] The main stream provided by execute/enqueue calls is the first worker stream
+[11/20/2026-00:21:39] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +16, now: CPU 0, GPU 36 (MiB)
+[11/20/2026-00:21:39] [I] Setting persistentCacheLimit to 0 bytes.
+[11/20/2026-00:21:39] [I] Created execution context with device memory size: 16.3594 MiB
+[11/20/2026-00:21:39] [I] Using random values for input images
+[11/20/2026-00:21:39] [I] Input binding for images with dimensions 1x3x640x640 and type fp32 is created.
+[11/20/2026-00:21:39] [I] Using random values for input orig_target_sizes
+[11/20/2026-00:21:39] [I] Input binding for orig_target_sizes with dimensions 1x2 and type int64 is created.
+[11/20/2026-00:21:39] [I] Output binding for labels with dimensions 1x300 and type int64 is created.
+[11/20/2026-00:21:39] [I] Output binding for boxes with dimensions 1x300x4 and type fp32 is created.
+[11/20/2026-00:21:39] [I] Output binding for scores with dimensions 1x300 and type fp32 is created.
+[11/20/2026-00:21:39] [I] [TRT] The following layers are used for L2 cache management and do not correspond to any layers in the INetworkDefinition: __mye499945_myl0_0, __mye499947_myl0_394
+[11/20/2026-00:21:39] [I] Starting inference
+[11/20/2026-00:21:40] [I] Warmup completed 74 queries over 200 ms
+[11/20/2026-00:21:40] [I] Timing trace has 300 queries over 0.80373 s
+[11/20/2026-00:21:40] [I] 
+[11/20/2026-00:21:40] [I] === Trace details ===
+[11/20/2026-00:21:40] [I] Trace averages of 10 runs:
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.71623 ms - Host latency: 2.76273 ms (enqueue 0.970428 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.63208 ms - Host latency: 2.68556 ms (enqueue 0.966313 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.56012 ms - Host latency: 2.61079 ms (enqueue 0.959128 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57212 ms - Host latency: 2.62329 ms (enqueue 0.971402 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.72401 ms - Host latency: 2.77745 ms (enqueue 1.07137 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57165 ms - Host latency: 2.61984 ms (enqueue 1.04082 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.56973 ms - Host latency: 2.62131 ms (enqueue 1.03079 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.5778 ms - Host latency: 2.62491 ms (enqueue 1.02914 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.59096 ms - Host latency: 2.63863 ms (enqueue 1.04442 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.73283 ms - Host latency: 2.78231 ms (enqueue 1.09373 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.5727 ms - Host latency: 2.62365 ms (enqueue 1.05566 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57344 ms - Host latency: 2.62289 ms (enqueue 1.04802 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57609 ms - Host latency: 2.62325 ms (enqueue 1.03804 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.58732 ms - Host latency: 2.63494 ms (enqueue 1.03648 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57404 ms - Host latency: 2.62485 ms (enqueue 1.03771 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57632 ms - Host latency: 2.62293 ms (enqueue 1.027 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.56583 ms - Host latency: 2.61647 ms (enqueue 1.02835 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.58959 ms - Host latency: 2.6365 ms (enqueue 1.03335 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.69397 ms - Host latency: 2.74586 ms (enqueue 1.05648 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.73678 ms - Host latency: 2.78318 ms (enqueue 1.05717 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57407 ms - Host latency: 2.6222 ms (enqueue 1.04019 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.5725 ms - Host latency: 2.62213 ms (enqueue 1.03022 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.58739 ms - Host latency: 2.63583 ms (enqueue 1.0312 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.60671 ms - Host latency: 2.6547 ms (enqueue 1.02761 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57673 ms - Host latency: 2.62435 ms (enqueue 1.02619 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.5751 ms - Host latency: 2.62694 ms (enqueue 1.02814 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57302 ms - Host latency: 2.62584 ms (enqueue 1.05113 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.61285 ms - Host latency: 2.6605 ms (enqueue 1.06058 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.97202 ms - Host latency: 3.02479 ms (enqueue 1.06584 ms)
+[11/20/2026-00:21:40] [I] Average on 10 runs - GPU latency: 2.57504 ms - Host latency: 2.62369 ms (enqueue 1.05011 ms)
+[11/20/2026-00:21:40] [I] 
+[11/20/2026-00:21:40] [I] === Performance summary ===
+[11/20/2026-00:21:40] [I] Throughput: 373.26 qps
+[11/20/2026-00:21:40] [I] Latency: min = 2.55688 ms, max = 3.94202 ms, mean = 2.66674 ms, median = 2.61951 ms, percentile(90%) = 2.72101 ms, percentile(95%) = 2.94501 ms, percentile(99%) = 3.61078 ms
+[11/20/2026-00:21:40] [I] Enqueue Time: min = 0.945526 ms, max = 1.17715 ms, mean = 1.03357 ms, median = 1.03517 ms, percentile(90%) = 1.07098 ms, percentile(95%) = 1.0816 ms, percentile(99%) = 1.1275 ms
+[11/20/2026-00:21:40] [I] H2D Latency: min = 0.0237732 ms, max = 0.0653687 ms, mean = 0.0426092 ms, median = 0.0423584 ms, percentile(90%) = 0.0490723 ms, percentile(95%) = 0.0526733 ms, percentile(99%) = 0.0619507 ms
+[11/20/2026-00:21:40] [I] GPU Compute Time: min = 2.51373 ms, max = 3.87518 ms, mean = 2.6173 ms, median = 2.56978 ms, percentile(90%) = 2.67017 ms, percentile(95%) = 2.91016 ms, percentile(99%) = 3.55847 ms
+[11/20/2026-00:21:40] [I] D2H Latency: min = 0.00463867 ms, max = 0.0327759 ms, mean = 0.00683319 ms, median = 0.00701904 ms, percentile(90%) = 0.00863647 ms, percentile(95%) = 0.00982666 ms, percentile(99%) = 0.0171204 ms
+[11/20/2026-00:21:40] [I] Total Host Walltime: 0.80373 s
+[11/20/2026-00:21:40] [I] Total GPU Compute Time: 0.785191 s
+[11/20/2026-00:21:40] [W] * GPU compute time is unstable, with coefficient of variance = 6.76595%.
+[11/20/2026-00:21:40] [W]   If not already in use, locking GPU clock frequency or adding --useSpinWait may improve the stability.
+[11/20/2026-00:21:40] [I] Explanations of the performance metrics are printed in the verbose logs.
+[11/20/2026-00:21:40] [I] 
+[11/20/2026-00:21:42] [I] 
+[11/20/2026-00:21:42] [I] === Profile (347 iterations ) ===
+[11/20/2026-00:21:42] [I]    Time(ms)     Avg.(ms)   Median(ms)   Time(%)   Layer
+[11/20/2026-00:21:42] [I]        6.69       0.0193       0.0196       0.5   __mye499945_myl0_0
+[11/20/2026-00:21:42] [I]       10.81       0.0312       0.0311       0.8   __myl_CastConc_myl0_1
+[11/20/2026-00:21:42] [I]       12.11       0.0349       0.0347       0.9   /model/backbone/backbone/patch_embed/convs.0/conv_bn_fused/Conv_myl0_2
+[11/20/2026-00:21:42] [I]       12.84       0.0370       0.0368       1.0   /model/backbone/backbone/patch_embed/convs.1/conv_bn_fused/Conv_myl0_3
+[11/20/2026-00:21:42] [I]        6.57       0.0189       0.0184       0.5   __myl_Corr_myl0_4
+[11/20/2026-00:21:42] [I]        4.10       0.0118       0.0114       0.3   __myl_Corr_myl0_5
+[11/20/2026-00:21:42] [I]        2.73       0.0079       0.0080       0.2   __myl_ConcMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_6
+[11/20/2026-00:21:42] [I]        4.76       0.0137       0.0134       0.4   __myl_Fc_myl0_7
+[11/20/2026-00:21:42] [I]        2.31       0.0067       0.0062       0.2   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_8
+[11/20/2026-00:21:42] [I]        2.01       0.0058       0.0053       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_9
+[11/20/2026-00:21:42] [I]       16.14       0.0465       0.0468       1.2   _gemm_mha_v2_myl0_10
+[11/20/2026-00:21:42] [I]        3.02       0.0087       0.0082       0.2   __myl_Fc_myl0_11
+[11/20/2026-00:21:42] [I]        2.87       0.0083       0.0081       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_12
+[11/20/2026-00:21:42] [I]        8.65       0.0249       0.0246       0.6   /model/backbone/backbone/blocks.0/mlp/fc1/MatMul_myl0_13
+[11/20/2026-00:21:42] [I]        4.27       0.0123       0.0122       0.3   __myl_Fc_myl0_14
+[11/20/2026-00:21:42] [I]        2.76       0.0080       0.0081       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_15
+[11/20/2026-00:21:42] [I]        4.61       0.0133       0.0125       0.3   __myl_Fc_myl0_16
+[11/20/2026-00:21:42] [I]        2.09       0.0060       0.0060       0.2   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_17
+[11/20/2026-00:21:42] [I]        2.14       0.0062       0.0061       0.2   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_18
+[11/20/2026-00:21:42] [I]       15.81       0.0456       0.0451       1.2   _gemm_mha_v2_myl0_19
+[11/20/2026-00:21:42] [I]        2.95       0.0085       0.0082       0.2   __myl_Fc_myl0_20
+[11/20/2026-00:21:42] [I]        2.65       0.0076       0.0073       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_21
+[11/20/2026-00:21:42] [I]        8.61       0.0248       0.0245       0.6   /model/backbone/backbone/blocks.1/mlp/fc1/MatMul_myl0_22
+[11/20/2026-00:21:42] [I]        4.15       0.0120       0.0122       0.3   __myl_Fc_myl0_23
+[11/20/2026-00:21:42] [I]        2.80       0.0081       0.0082       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_24
+[11/20/2026-00:21:42] [I]        4.62       0.0133       0.0133       0.3   __myl_Fc_myl0_25
+[11/20/2026-00:21:42] [I]        2.13       0.0062       0.0060       0.2   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_26
+[11/20/2026-00:21:42] [I]        2.00       0.0058       0.0060       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_27
+[11/20/2026-00:21:42] [I]       15.80       0.0455       0.0451       1.2   _gemm_mha_v2_myl0_28
+[11/20/2026-00:21:42] [I]        3.05       0.0088       0.0082       0.2   __myl_Fc_myl0_29
+[11/20/2026-00:21:42] [I]        2.75       0.0079       0.0081       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_30
+[11/20/2026-00:21:42] [I]        8.62       0.0248       0.0245       0.6   /model/backbone/backbone/blocks.2/mlp/fc1/MatMul_myl0_31
+[11/20/2026-00:21:42] [I]        4.29       0.0123       0.0123       0.3   __myl_Fc_myl0_32
+[11/20/2026-00:21:42] [I]        2.76       0.0079       0.0081       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_33
+[11/20/2026-00:21:42] [I]        4.55       0.0131       0.0124       0.3   __myl_Fc_myl0_34
+[11/20/2026-00:21:42] [I]        2.09       0.0060       0.0060       0.2   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_35
+[11/20/2026-00:21:42] [I]        2.03       0.0059       0.0060       0.2   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_36
+[11/20/2026-00:21:42] [I]       15.86       0.0457       0.0460       1.2   _gemm_mha_v2_myl0_37
+[11/20/2026-00:21:42] [I]        3.01       0.0087       0.0082       0.2   __myl_Fc_myl0_38
+[11/20/2026-00:21:42] [I]        2.58       0.0074       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_39
+[11/20/2026-00:21:42] [I]        8.79       0.0253       0.0255       0.7   /model/backbone/backbone/blocks.3/mlp/fc1/MatMul_myl0_40
+[11/20/2026-00:21:42] [I]        4.01       0.0115       0.0113       0.3   __myl_Fc_myl0_41
+[11/20/2026-00:21:42] [I]        2.60       0.0075       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_42
+[11/20/2026-00:21:42] [I]        4.70       0.0135       0.0133       0.3   __myl_Fc_myl0_43
+[11/20/2026-00:21:42] [I]        1.87       0.0054       0.0051       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_44
+[11/20/2026-00:21:42] [I]        1.87       0.0054       0.0051       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_45
+[11/20/2026-00:21:42] [I]       16.02       0.0462       0.0461       1.2   _gemm_mha_v2_myl0_46
+[11/20/2026-00:21:42] [I]        3.27       0.0094       0.0092       0.2   __myl_Fc_myl0_47
+[11/20/2026-00:21:42] [I]        2.56       0.0074       0.0071       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_48
+[11/20/2026-00:21:42] [I]        8.95       0.0258       0.0256       0.7   /model/backbone/backbone/blocks.4/mlp/fc1/MatMul_myl0_49
+[11/20/2026-00:21:42] [I]        4.00       0.0115       0.0113       0.3   __myl_Fc_myl0_50
+[11/20/2026-00:21:42] [I]        2.55       0.0074       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_51
+[11/20/2026-00:21:42] [I]        4.68       0.0135       0.0133       0.3   __myl_Fc_myl0_52
+[11/20/2026-00:21:42] [I]        1.83       0.0053       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_53
+[11/20/2026-00:21:42] [I]        1.84       0.0053       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_54
+[11/20/2026-00:21:42] [I]       16.02       0.0462       0.0461       1.2   _gemm_mha_v2_myl0_55
+[11/20/2026-00:21:42] [I]        3.26       0.0094       0.0092       0.2   __myl_Fc_myl0_56
+[11/20/2026-00:21:42] [I]        2.66       0.0077       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_57
+[11/20/2026-00:21:42] [I]        8.99       0.0259       0.0256       0.7   /model/backbone/backbone/blocks.5/mlp/fc1/MatMul_myl0_58
+[11/20/2026-00:21:42] [I]        3.97       0.0114       0.0113       0.3   __myl_Fc_myl0_59
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_60
+[11/20/2026-00:21:42] [I]        4.67       0.0135       0.0133       0.3   __myl_Fc_myl0_61
+[11/20/2026-00:21:42] [I]        1.82       0.0052       0.0051       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_62
+[11/20/2026-00:21:42] [I]        1.83       0.0053       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_63
+[11/20/2026-00:21:42] [I]       16.04       0.0462       0.0461       1.2   _gemm_mha_v2_myl0_64
+[11/20/2026-00:21:42] [I]        3.30       0.0095       0.0092       0.2   __myl_Fc_myl0_65
+[11/20/2026-00:21:42] [I]        2.57       0.0074       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_66
+[11/20/2026-00:21:42] [I]        8.96       0.0258       0.0256       0.7   /model/backbone/backbone/blocks.6/mlp/fc1/MatMul_myl0_67
+[11/20/2026-00:21:42] [I]        3.97       0.0114       0.0113       0.3   __myl_Fc_myl0_68
+[11/20/2026-00:21:42] [I]        2.51       0.0072       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_69
+[11/20/2026-00:21:42] [I]        4.66       0.0134       0.0133       0.3   __myl_Fc_myl0_70
+[11/20/2026-00:21:42] [I]        1.83       0.0053       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_71
+[11/20/2026-00:21:42] [I]        1.84       0.0053       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_72
+[11/20/2026-00:21:42] [I]       16.00       0.0461       0.0461       1.2   _gemm_mha_v2_myl0_73
+[11/20/2026-00:21:42] [I]        3.27       0.0094       0.0093       0.2   __myl_Fc_myl0_74
+[11/20/2026-00:21:42] [I]        2.57       0.0074       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_75
+[11/20/2026-00:21:42] [I]        8.97       0.0258       0.0257       0.7   /model/backbone/backbone/blocks.7/mlp/fc1/MatMul_myl0_76
+[11/20/2026-00:21:42] [I]        3.98       0.0115       0.0113       0.3   __myl_Fc_myl0_77
+[11/20/2026-00:21:42] [I]        2.56       0.0074       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_78
+[11/20/2026-00:21:42] [I]        4.71       0.0136       0.0133       0.3   __myl_Fc_myl0_79
+[11/20/2026-00:21:42] [I]        1.87       0.0054       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_80
+[11/20/2026-00:21:42] [I]        1.84       0.0053       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_81
+[11/20/2026-00:21:42] [I]       15.95       0.0460       0.0461       1.2   _gemm_mha_v2_myl0_82
+[11/20/2026-00:21:42] [I]        3.25       0.0094       0.0092       0.2   __myl_Fc_myl0_83
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_84
+[11/20/2026-00:21:42] [I]        8.95       0.0258       0.0257       0.7   /model/backbone/backbone/blocks.8/mlp/fc1/MatMul_myl0_85
+[11/20/2026-00:21:42] [I]        3.97       0.0114       0.0113       0.3   __myl_Fc_myl0_86
+[11/20/2026-00:21:42] [I]        2.55       0.0073       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_87
+[11/20/2026-00:21:42] [I]        4.68       0.0135       0.0134       0.3   __myl_Fc_myl0_88
+[11/20/2026-00:21:42] [I]        1.82       0.0052       0.0051       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_89
+[11/20/2026-00:21:42] [I]        1.85       0.0053       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_90
+[11/20/2026-00:21:42] [I]       16.02       0.0462       0.0461       1.2   _gemm_mha_v2_myl0_91
+[11/20/2026-00:21:42] [I]        3.31       0.0095       0.0092       0.2   __myl_Fc_myl0_92
+[11/20/2026-00:21:42] [I]        2.60       0.0075       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_93
+[11/20/2026-00:21:42] [I]        8.97       0.0258       0.0256       0.7   /model/backbone/backbone/blocks.9/mlp/fc1/MatMul_myl0_94
+[11/20/2026-00:21:42] [I]        3.99       0.0115       0.0113       0.3   __myl_Fc_myl0_95
+[11/20/2026-00:21:42] [I]        2.52       0.0073       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_96
+[11/20/2026-00:21:42] [I]        4.68       0.0135       0.0133       0.3   __myl_Fc_myl0_97
+[11/20/2026-00:21:42] [I]        1.87       0.0054       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_98
+[11/20/2026-00:21:42] [I]        1.87       0.0054       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_99
+[11/20/2026-00:21:42] [I]       15.98       0.0460       0.0461       1.2   _gemm_mha_v2_myl0_100
+[11/20/2026-00:21:42] [I]        3.25       0.0094       0.0092       0.2   __myl_Fc_myl0_101
+[11/20/2026-00:21:42] [I]        2.55       0.0073       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_102
+[11/20/2026-00:21:42] [I]        8.97       0.0258       0.0256       0.7   /model/backbone/backbone/blocks.10/mlp/fc1/MatMul_myl0_103
+[11/20/2026-00:21:42] [I]        4.01       0.0116       0.0113       0.3   __myl_Fc_myl0_104
+[11/20/2026-00:21:42] [I]        3.54       0.0102       0.0094       0.3   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAddSlic_myl0_105
+[11/20/2026-00:21:42] [I]        4.64       0.0134       0.0133       0.3   __myl_Fc_myl0_106
+[11/20/2026-00:21:42] [I]        1.84       0.0053       0.0051       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcTranReshMove_myl0_107
+[11/20/2026-00:21:42] [I]        1.85       0.0053       0.0052       0.1   __myl_TranSlicNegSlicConcMulSlicMulAddSlicConcReshMove_myl0_108
+[11/20/2026-00:21:42] [I]       16.02       0.0462       0.0461       1.2   _gemm_mha_v2_myl0_109
+[11/20/2026-00:21:42] [I]        3.27       0.0094       0.0092       0.2   __myl_Fc_myl0_110
+[11/20/2026-00:21:42] [I]        2.56       0.0074       0.0072       0.2   __myl_AddMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_111
+[11/20/2026-00:21:42] [I]        9.01       0.0260       0.0256       0.7   /model/backbone/backbone/blocks.11/mlp/fc1/MatMul_myl0_112
+[11/20/2026-00:21:42] [I]        3.99       0.0115       0.0113       0.3   __myl_Fc_myl0_113
+[11/20/2026-00:21:42] [I]        5.41       0.0156       0.0154       0.4   __myl_AddTranSlicReshReshConcSlicSlicAddDivReshTranReshResi_myl0_114
+[11/20/2026-00:21:42] [I]        2.58       0.0074       0.0072       0.2   __myl_Corr_myl0_116
+[11/20/2026-00:21:42] [I]        4.78       0.0138       0.0139       0.4   __myl_Fc_myl0_119
+[11/20/2026-00:21:42] [I]        4.43       0.0128       0.0133       0.3   __myl_TranReshAdd_myl0_121
+[11/20/2026-00:21:42] [I]        2.96       0.0085       0.0089       0.2   __myl_Fc_myl0_122
+[11/20/2026-00:21:42] [I]        6.08       0.0175       0.0174       0.5   _gemm_mha_v2_myl0_124
+[11/20/2026-00:21:42] [I]        2.52       0.0073       0.0072       0.2   __myl_Fc_myl0_125
+[11/20/2026-00:21:42] [I]        3.24       0.0093       0.0093       0.2   __myl_ReshAddReshMoveMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_126
+[11/20/2026-00:21:42] [I]        3.32       0.0096       0.0093       0.2   /model/encoder/encoder.0/layers.0/linear1/MatMul_myl0_127
+[11/20/2026-00:21:42] [I]        1.83       0.0053       0.0052       0.1   __myl_Silu_myl0_128
+[11/20/2026-00:21:42] [I]        2.57       0.0074       0.0072       0.2   __myl_Fc_myl0_129
+[11/20/2026-00:21:42] [I]        1.88       0.0054       0.0052       0.1   __myl_ReshAddReshMeanSubMulMean_myl0_130
+[11/20/2026-00:21:42] [I]        1.83       0.0053       0.0052       0.1   __myl_AddSqrtDivMulMulAddReshTran_myl0_131
+[11/20/2026-00:21:42] [I]        2.53       0.0073       0.0072       0.2   __myl_Corr_myl0_132
+[11/20/2026-00:21:42] [I]        1.87       0.0054       0.0052       0.1   __myl_ResiAdd_myl0_133
+[11/20/2026-00:21:42] [I]        4.71       0.0136       0.0133       0.3   /model/encoder/fpn_blocks.0/cv1/conv_bn_fused/Conv_myl0_134
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0072       0.2   __myl_Spli_myl0_135
+[11/20/2026-00:21:42] [I]        3.94       0.0114       0.0113       0.3   /model/encoder/fpn_blocks.0/cv2/cv2.0/conv1/conv_bn_fused/Conv_myl0_136
+[11/20/2026-00:21:42] [I]        1.82       0.0052       0.0052       0.1   __myl_Slic_myl0_137
+[11/20/2026-00:21:42] [I]        3.27       0.0094       0.0092       0.2   /model/encoder/fpn_blocks.0/cv2/cv2.0/bottlenecks/bottlenecks.0/conv/Conv_myl0_138
+[11/20/2026-00:21:42] [I]        3.27       0.0094       0.0092       0.2   /model/encoder/fpn_blocks.0/cv2/cv2.0/bottlenecks/bottlenecks.1/conv/Conv_myl0_139
+[11/20/2026-00:21:42] [I]        2.10       0.0060       0.0052       0.2   __myl_SlicAdd_myl0_140
+[11/20/2026-00:21:42] [I]        3.25       0.0094       0.0092       0.2   /model/encoder/fpn_blocks.0/cv3/cv3.0/conv1/conv_bn_fused/Conv_myl0_141
+[11/20/2026-00:21:42] [I]        1.79       0.0052       0.0052       0.1   __myl_Slic_myl0_142
+[11/20/2026-00:21:42] [I]        3.76       0.0108       0.0092       0.3   /model/encoder/fpn_blocks.0/cv3/cv3.0/bottlenecks/bottlenecks.0/conv/Conv_myl0_143
+[11/20/2026-00:21:42] [I]        4.49       0.0129       0.0092       0.3   /model/encoder/fpn_blocks.0/cv3/cv3.0/bottlenecks/bottlenecks.1/conv/Conv_myl0_144
+[11/20/2026-00:21:42] [I]        1.82       0.0052       0.0052       0.1   __myl_SlicAdd_myl0_145
+[11/20/2026-00:21:42] [I]        4.55       0.0131       0.0133       0.3   /model/encoder/fpn_blocks.0/cv4/conv_bn_fused/Conv_myl0_146
+[11/20/2026-00:21:42] [I]        3.28       0.0095       0.0092       0.2   __myl_Corr_myl0_147
+[11/20/2026-00:21:42] [I]        5.68       0.0164       0.0164       0.4   __myl_Resi_myl0_149
+[11/20/2026-00:21:42] [I]        3.26       0.0094       0.0092       0.2   __myl_ResiAdd_myl0_152
+[11/20/2026-00:21:42] [I]       14.51       0.0418       0.0276       1.1   /model/encoder/fpn_blocks.1/cv1/conv_bn_fused/Conv_myl0_153
+[11/20/2026-00:21:42] [I]        6.63       0.0191       0.0194       0.5   __myl_Spli_myl0_154
+[11/20/2026-00:21:42] [I]        4.97       0.0143       0.0143       0.4   /model/encoder/fpn_blocks.1/cv2/cv2.0/conv1/conv_bn_fused/Conv_myl0_155
+[11/20/2026-00:21:42] [I]        1.81       0.0052       0.0051       0.1   __myl_Slic_myl0_156
+[11/20/2026-00:21:42] [I]        5.38       0.0155       0.0154       0.4   /model/encoder/fpn_blocks.1/cv2/cv2.0/bottlenecks/bottlenecks.0/conv/Conv_myl0_157
+[11/20/2026-00:21:42] [I]        4.68       0.0135       0.0133       0.3   /model/encoder/fpn_blocks.1/cv2/cv2.0/bottlenecks/bottlenecks.1/conv/Conv_myl0_158
+[11/20/2026-00:21:42] [I]        1.85       0.0053       0.0051       0.1   __myl_SlicAdd_myl0_159
+[11/20/2026-00:21:42] [I]        4.71       0.0136       0.0133       0.3   /model/encoder/fpn_blocks.1/cv3/cv3.0/conv1/conv_bn_fused/Conv_myl0_160
+[11/20/2026-00:21:42] [I]        1.85       0.0053       0.0052       0.1   __myl_Slic_myl0_161
+[11/20/2026-00:21:42] [I]        5.09       0.0147       0.0153       0.4   /model/encoder/fpn_blocks.1/cv3/cv3.0/bottlenecks/bottlenecks.0/conv/Conv_myl0_162
+[11/20/2026-00:21:42] [I]        4.64       0.0134       0.0133       0.3   /model/encoder/fpn_blocks.1/cv3/cv3.0/bottlenecks/bottlenecks.1/conv/Conv_myl0_163
+[11/20/2026-00:21:42] [I]        1.84       0.0053       0.0052       0.1   __myl_SlicAdd_myl0_164
+[11/20/2026-00:21:42] [I]        7.56       0.0218       0.0215       0.6   /model/encoder/fpn_blocks.1/cv4/conv_bn_fused/Conv_myl0_165
+[11/20/2026-00:21:42] [I]        5.05       0.0145       0.0151       0.4   __myl_Corr_myl0_166
+[11/20/2026-00:21:42] [I]       11.81       0.0340       0.0338       0.9   /model/encoder/downsample_convs.0/downsample_convs.0.0/cv2/conv_bn_fused/Conv_myl0_167
+[11/20/2026-00:21:42] [I]        4.69       0.0135       0.0133       0.3   /model/encoder/pan_blocks.0/cv1/conv_bn_fused/Conv_myl0_168
+[11/20/2026-00:21:42] [I]        2.34       0.0067       0.0071       0.2   __myl_Spli_myl0_169
+[11/20/2026-00:21:42] [I]        3.93       0.0113       0.0113       0.3   /model/encoder/pan_blocks.0/cv2/cv2.0/conv1/conv_bn_fused/Conv_myl0_170
+[11/20/2026-00:21:42] [I]        1.81       0.0052       0.0052       0.1   __myl_Slic_myl0_171
+[11/20/2026-00:21:42] [I]        3.27       0.0094       0.0092       0.2   /model/encoder/pan_blocks.0/cv2/cv2.0/bottlenecks/bottlenecks.0/conv/Conv_myl0_172
+[11/20/2026-00:21:42] [I]        3.27       0.0094       0.0092       0.2   /model/encoder/pan_blocks.0/cv2/cv2.0/bottlenecks/bottlenecks.1/conv/Conv_myl0_173
+[11/20/2026-00:21:42] [I]        1.81       0.0052       0.0052       0.1   __myl_SlicAdd_myl0_174
+[11/20/2026-00:21:42] [I]        3.26       0.0094       0.0092       0.2   /model/encoder/pan_blocks.0/cv3/cv3.0/conv1/conv_bn_fused/Conv_myl0_175
+[11/20/2026-00:21:42] [I]        1.88       0.0054       0.0052       0.1   __myl_Slic_myl0_176
+[11/20/2026-00:21:42] [I]        3.29       0.0095       0.0092       0.2   /model/encoder/pan_blocks.0/cv3/cv3.0/bottlenecks/bottlenecks.0/conv/Conv_myl0_177
+[11/20/2026-00:21:42] [I]        3.26       0.0094       0.0092       0.2   /model/encoder/pan_blocks.0/cv3/cv3.0/bottlenecks/bottlenecks.1/conv/Conv_myl0_178
+[11/20/2026-00:21:42] [I]        1.81       0.0052       0.0052       0.1   __myl_SlicAdd_myl0_179
+[11/20/2026-00:21:42] [I]        4.66       0.0134       0.0133       0.3   /model/encoder/pan_blocks.0/cv4/conv_bn_fused/Conv_myl0_180
+[11/20/2026-00:21:42] [I]        3.22       0.0093       0.0092       0.2   __myl_Corr_myl0_181
+[11/20/2026-00:21:42] [I]        4.68       0.0135       0.0133       0.3   /model/encoder/downsample_convs.1/downsample_convs.1.0/cv2/conv_bn_fused/Conv_myl0_182
+[11/20/2026-00:21:42] [I]        3.79       0.0109       0.0113       0.3   /model/encoder/pan_blocks.1/cv1/conv_bn_fused/Conv_myl0_183
+[11/20/2026-00:21:42] [I]        1.82       0.0052       0.0051       0.1   __myl_Spli_myl0_184
+[11/20/2026-00:21:42] [I]        3.19       0.0092       0.0092       0.2   /model/encoder/pan_blocks.1/cv2/cv2.0/conv1/conv_bn_fused/Conv_myl0_185
+[11/20/2026-00:21:42] [I]        1.86       0.0054       0.0052       0.1   __myl_Slic_myl0_186
+[11/20/2026-00:21:42] [I]        2.92       0.0084       0.0074       0.2   /model/encoder/pan_blocks.1/cv2/cv2.0/bottlenecks/bottlenecks.0/conv/Conv_myl0_187
+[11/20/2026-00:21:42] [I]        3.12       0.0090       0.0091       0.2   /model/encoder/pan_blocks.1/cv2/cv2.0/bottlenecks/bottlenecks.1/conv/Conv_myl0_188
+[11/20/2026-00:21:42] [I]        1.85       0.0053       0.0051       0.1   __myl_SlicAdd_myl0_189
+[11/20/2026-00:21:42] [I]        2.58       0.0074       0.0072       0.2   /model/encoder/pan_blocks.1/cv3/cv3.0/conv1/conv_bn_fused/Conv_myl0_190
+[11/20/2026-00:21:42] [I]        1.62       0.0047       0.0051       0.1   __myl_Slic_myl0_191
+[11/20/2026-00:21:42] [I]        2.93       0.0085       0.0091       0.2   /model/encoder/pan_blocks.1/cv3/cv3.0/bottlenecks/bottlenecks.0/conv/Conv_myl0_192
+[11/20/2026-00:21:42] [I]        2.85       0.0082       0.0073       0.2   /model/encoder/pan_blocks.1/cv3/cv3.0/bottlenecks/bottlenecks.1/conv/Conv_myl0_193
+[11/20/2026-00:21:42] [I]        1.68       0.0048       0.0051       0.1   __myl_SlicAdd_myl0_194
+[11/20/2026-00:21:42] [I]        3.26       0.0094       0.0092       0.2   /model/encoder/pan_blocks.1/cv4/conv_bn_fused/Conv_myl0_195
+[11/20/2026-00:21:42] [I]       16.08       0.0463       0.0461       1.2   __myl_TranTranTranConcMoveReshTranSlicSlicSlicMul_myl0_196
+[11/20/2026-00:21:42] [I]        4.72       0.0136       0.0133       0.4   /model/decoder/enc_score_head/MatMul_myl0_197
+[11/20/2026-00:21:42] [I]        2.53       0.0073       0.0072       0.2   __myl_MaxrResh_myl0_198
+[11/20/2026-00:21:42] [I]       10.38       0.0299       0.0298       0.8   __myl_Topk_myl0_199
+[11/20/2026-00:21:42] [I]        1.87       0.0054       0.0052       0.1   __myl_CastReshReplCastGath_myl0_200
+[11/20/2026-00:21:42] [I]        3.22       0.0093       0.0097       0.2   __myl_Fc_myl0_203
+[11/20/2026-00:21:42] [I]        3.33       0.0096       0.0093       0.2   __myl_FcSilu_myl0_205
+[11/20/2026-00:21:42] [I]        3.00       0.0086       0.0082       0.2   __myl_FcSilu_myl0_206
+[11/20/2026-00:21:42] [I]        2.53       0.0073       0.0072       0.2   /model/decoder/enc_bbox_head/layers.2/MatMul_myl0_207
+[11/20/2026-00:21:42] [I]        1.83       0.0053       0.0052       0.1   __myl_ReplCastGathAddSigm_myl0_208
+[11/20/2026-00:21:42] [I]        2.58       0.0074       0.0072       0.2   /model/decoder/decoder/query_pos_head/layers.0/MatMul_myl0_209
+[11/20/2026-00:21:42] [I]        1.86       0.0054       0.0052       0.1   __myl_Silu_myl0_210
+[11/20/2026-00:21:42] [I]        2.56       0.0074       0.0072       0.2   __myl_FcSilu_myl0_211
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0072       0.2   __myl_Fc_myl0_212
+[11/20/2026-00:21:42] [I]        1.82       0.0052       0.0052       0.1   __myl_MaxMinAdd_myl0_213
+[11/20/2026-00:21:42] [I]        2.56       0.0074       0.0072       0.2   __myl_Fc_myl0_214
+[11/20/2026-00:21:42] [I]        4.04       0.0116       0.0113       0.3   _gemm_mha_v2_myl0_216
+[11/20/2026-00:21:42] [I]        2.51       0.0072       0.0072       0.2   __myl_Fc_myl0_217
+[11/20/2026-00:21:42] [I]        2.52       0.0073       0.0072       0.2   __myl_AddReshMeanSubMulMeanAddSqrtDivMulMulAddReshAdd_myl0_218
+[11/20/2026-00:21:42] [I]        2.55       0.0073       0.0072       0.2   __myl_Fc_myl0_219
+[11/20/2026-00:21:42] [I]        1.86       0.0054       0.0052       0.1   __myl_ReshSlicSlicReshMulMulMulAddMulAddTranReshSlicSlicSlic_myl0_220
+[11/20/2026-00:21:42] [I]       15.74       0.0454       0.0451       1.2   __myl_ReshGridCast_myl0_223
+[11/20/2026-00:21:42] [I]       14.91       0.0430       0.0430       1.1   __myl_ReshGridCast_myl0_226
+[11/20/2026-00:21:42] [I]        8.49       0.0245       0.0236       0.6   __myl_ReshGrid_myl0_228
+[11/20/2026-00:21:42] [I]        7.26       0.0209       0.0215       0.5   __myl_ReshMaxrSubExpSum_myl0_229
+[11/20/2026-00:21:42] [I]        8.39       0.0242       0.0239       0.6   __myl_DivMulTranReshCastConcMulSum_myl0_232
+[11/20/2026-00:21:42] [I]        2.52       0.0073       0.0072       0.2   __myl_ReshTranConc_myl0_233
+[11/20/2026-00:21:42] [I]        3.25       0.0094       0.0092       0.2   __myl_Fc_myl0_234
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0072       0.2   __myl_SigmSlicMulSlicMulAddReshMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_235
+[11/20/2026-00:21:42] [I]        3.27       0.0094       0.0092       0.2   /model/decoder/decoder/layers.0/linear1/MatMul_myl0_236
+[11/20/2026-00:21:42] [I]        1.89       0.0055       0.0052       0.1   __myl_Silu_myl0_237
+[11/20/2026-00:21:42] [I]        2.57       0.0074       0.0072       0.2   __myl_Fc_myl0_238
+[11/20/2026-00:21:42] [I]        2.52       0.0073       0.0072       0.2   __myl_ReshAddMaxMinMeanSubMulMeanAddSqrtDivMulMulAddAdd_myl0_239
+[11/20/2026-00:21:42] [I]        3.80       0.0109       0.0112       0.3   __myl_Fc_myl0_242
+[11/20/2026-00:21:42] [I]        2.58       0.0074       0.0074       0.2   __myl_Fc_myl0_244
+[11/20/2026-00:21:42] [I]        5.63       0.0162       0.0122       0.4   _gemm_mha_v2_myl0_246
+[11/20/2026-00:21:42] [I]        2.64       0.0076       0.0074       0.2   __myl_Fc_myl0_247
+[11/20/2026-00:21:42] [I]        2.92       0.0084       0.0086       0.2   __myl_AddReshMeanSubMulMeanAddSqrtDivMulMulAddReshAdd_myl0_248
+[11/20/2026-00:21:42] [I]        2.90       0.0084       0.0072       0.2   __myl_Fc_myl0_249
+[11/20/2026-00:21:42] [I]        3.53       0.0102       0.0102       0.3   __myl_Fc_myl0_251
+[11/20/2026-00:21:42] [I]        2.26       0.0065       0.0062       0.2   __myl_Silu_myl0_252
+[11/20/2026-00:21:42] [I]        3.84       0.0111       0.0124       0.3   __myl_FcSilu_myl0_253
+[11/20/2026-00:21:42] [I]        3.86       0.0111       0.0105       0.3   /model/decoder/decoder/dec_bbox_head.0/layers.2/MatMul_myl0_256
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0071       0.2   __myl_MaxrSubExpSumDivMul_myl0_257
+[11/20/2026-00:21:42] [I]        2.78       0.0080       0.0073       0.2   /model/decoder/decoder/integral/MatMul_myl0_258
+[11/20/2026-00:21:42] [I]        2.34       0.0067       0.0069       0.2   __myl_ReshMaxrSubExpSum_myl0_260
+[11/20/2026-00:21:42] [I]        1.94       0.0056       0.0053       0.1   __myl_Silu_myl0_261
+[11/20/2026-00:21:42] [I]        2.73       0.0079       0.0073       0.2   __myl_FcSilu_myl0_262
+[11/20/2026-00:21:42] [I]        2.63       0.0076       0.0075       0.2   /model/decoder/decoder/pre_bbox_head/layers.2/MatMul_myl0_265
+[11/20/2026-00:21:42] [I]        6.24       0.0180       0.0178       0.5   __myl_MaxMinSubMaxMinMaxMinDivLogReshMulAddSigmSlicReshSlicReshAddSlicReshSlicReshAddSlicReshMulEtc_myl0_269
+[11/20/2026-00:21:42] [I]        2.96       0.0085       0.0083       0.2   __myl_GridCast_myl0_272
+[11/20/2026-00:21:42] [I]        3.46       0.0100       0.0101       0.3   __myl_GridCast_myl0_275
+[11/20/2026-00:21:42] [I]        2.58       0.0074       0.0073       0.2   __myl_GridCast_myl0_277
+[11/20/2026-00:21:42] [I]        7.80       0.0225       0.0222       0.6   __myl_DivMulTranReshConcMulSum_myl0_280
+[11/20/2026-00:21:42] [I]        2.55       0.0073       0.0072       0.2   __myl_ReshTranConc_myl0_281
+[11/20/2026-00:21:42] [I]        2.70       0.0078       0.0073       0.2   __myl_Fc_myl0_282
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0072       0.2   __myl_SigmSlicMulSlicMulAddReshMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_283
+[11/20/2026-00:21:42] [I]        2.80       0.0081       0.0073       0.2   /model/decoder/decoder/layers.1/linear1/MatMul_myl0_284
+[11/20/2026-00:21:42] [I]        1.86       0.0053       0.0051       0.1   __myl_Silu_myl0_285
+[11/20/2026-00:21:42] [I]        2.58       0.0074       0.0072       0.2   __myl_Fc_myl0_286
+[11/20/2026-00:21:42] [I]        2.52       0.0072       0.0071       0.2   __myl_ReshAddMaxMinMeanSubMulMeanAddSqrtDivMulMulAddAddAdd_myl0_287
+[11/20/2026-00:21:42] [I]        2.63       0.0076       0.0072       0.2   __myl_Fc_myl0_290
+[11/20/2026-00:21:42] [I]        2.59       0.0075       0.0073       0.2   __myl_Fc_myl0_292
+[11/20/2026-00:21:42] [I]        4.49       0.0129       0.0123       0.3   _gemm_mha_v2_myl0_294
+[11/20/2026-00:21:42] [I]        2.63       0.0076       0.0072       0.2   __myl_Fc_myl0_295
+[11/20/2026-00:21:42] [I]        2.67       0.0077       0.0076       0.2   __myl_AddReshMeanSubMulMeanAddSqrtDivMulMulAddReshAdd_myl0_296
+[11/20/2026-00:21:42] [I]        2.49       0.0072       0.0069       0.2   __myl_Fc_myl0_297
+[11/20/2026-00:21:42] [I]        4.40       0.0127       0.0129       0.3   __myl_FcSilu_myl0_299
+[11/20/2026-00:21:42] [I]        4.14       0.0119       0.0118       0.3   __myl_FcSilu_myl0_302
+[11/20/2026-00:21:42] [I]        3.31       0.0095       0.0091       0.2   /model/decoder/decoder/dec_bbox_head.1/layers.2/MatMul_myl0_303
+[11/20/2026-00:21:42] [I]        2.58       0.0074       0.0072       0.2   __myl_AddReshMaxrSubExpSumDivMul_myl0_304
+[11/20/2026-00:21:42] [I]        2.45       0.0071       0.0072       0.2   /model/decoder/decoder/integral_1/MatMul_myl0_305
+[11/20/2026-00:21:42] [I]        1.98       0.0057       0.0052       0.1   __myl_ReshMaxrSubExpSum_myl0_307
+[11/20/2026-00:21:42] [I]        3.05       0.0088       0.0081       0.2   __myl_ReshMulSlicReshAddMulAddReshSlicReshAddMulAddReshSlicReshAddMulSubReshSlicReshAddMulSubReshEtc_myl0_309
+[11/20/2026-00:21:42] [I]        3.50       0.0101       0.0101       0.3   __myl_GridCast_myl0_312
+[11/20/2026-00:21:42] [I]        3.34       0.0096       0.0098       0.2   __myl_GridCast_myl0_315
+[11/20/2026-00:21:42] [I]        2.55       0.0074       0.0072       0.2   __myl_GridCast_myl0_317
+[11/20/2026-00:21:42] [I]        7.64       0.0220       0.0218       0.6   __myl_DivMulTranReshConcMulSum_myl0_320
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0072       0.2   __myl_ReshTranConc_myl0_321
+[11/20/2026-00:21:42] [I]        2.66       0.0077       0.0073       0.2   __myl_Fc_myl0_322
+[11/20/2026-00:21:42] [I]        2.50       0.0072       0.0071       0.2   __myl_SigmSlicMulSlicMulAddReshMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_323
+[11/20/2026-00:21:42] [I]        2.67       0.0077       0.0072       0.2   /model/decoder/decoder/layers.2/linear1/MatMul_myl0_324
+[11/20/2026-00:21:42] [I]        1.81       0.0052       0.0051       0.1   __myl_Silu_myl0_325
+[11/20/2026-00:21:42] [I]        2.53       0.0073       0.0072       0.2   __myl_Fc_myl0_326
+[11/20/2026-00:21:42] [I]        2.53       0.0073       0.0072       0.2   __myl_ReshAddMaxMinMeanSubMulMeanAddSqrtDivMulMulAddAddAdd_myl0_327
+[11/20/2026-00:21:42] [I]        2.63       0.0076       0.0072       0.2   __myl_Fc_myl0_330
+[11/20/2026-00:21:42] [I]        2.61       0.0075       0.0073       0.2   __myl_Fc_myl0_332
+[11/20/2026-00:21:42] [I]        4.49       0.0129       0.0123       0.3   _gemm_mha_v2_myl0_334
+[11/20/2026-00:21:42] [I]        2.57       0.0074       0.0072       0.2   __myl_Fc_myl0_335
+[11/20/2026-00:21:42] [I]        2.75       0.0079       0.0076       0.2   __myl_AddReshMeanSubMulMeanAddSqrtDivMulMulAddReshAdd_myl0_336
+[11/20/2026-00:21:42] [I]        2.55       0.0074       0.0069       0.2   __myl_Fc_myl0_337
+[11/20/2026-00:21:42] [I]        4.55       0.0131       0.0130       0.3   __myl_FcSilu_myl0_339
+[11/20/2026-00:21:42] [I]        4.19       0.0121       0.0118       0.3   __myl_FcSilu_myl0_342
+[11/20/2026-00:21:42] [I]        3.34       0.0096       0.0091       0.2   /model/decoder/decoder/dec_bbox_head.2/layers.2/MatMul_myl0_343
+[11/20/2026-00:21:42] [I]        2.61       0.0075       0.0072       0.2   __myl_AddReshMaxrSubExpSumDivMul_myl0_344
+[11/20/2026-00:21:42] [I]        2.52       0.0073       0.0072       0.2   /model/decoder/decoder/integral_2/MatMul_myl0_345
+[11/20/2026-00:21:42] [I]        2.06       0.0059       0.0061       0.2   __myl_ReshMaxrSubExpSum_myl0_347
+[11/20/2026-00:21:42] [I]        3.11       0.0090       0.0092       0.2   __myl_ReshMulSlicReshAddMulAddReshSlicReshAddMulAddReshSlicReshAddMulSubReshSlicReshAddMulSubReshEtc_myl0_349
+[11/20/2026-00:21:42] [I]        3.43       0.0099       0.0097       0.3   __myl_GridCast_myl0_352
+[11/20/2026-00:21:42] [I]        3.50       0.0101       0.0101       0.3   __myl_GridCast_myl0_355
+[11/20/2026-00:21:42] [I]        2.55       0.0074       0.0072       0.2   __myl_GridCast_myl0_357
+[11/20/2026-00:21:42] [I]        7.69       0.0222       0.0219       0.6   __myl_DivMulTranReshConcMulSum_myl0_360
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0072       0.2   __myl_ReshTranConc_myl0_361
+[11/20/2026-00:21:42] [I]        2.73       0.0079       0.0073       0.2   __myl_Fc_myl0_362
+[11/20/2026-00:21:42] [I]        2.55       0.0073       0.0071       0.2   __myl_SigmSlicMulSlicMulAddReshMeanSubMulMeanAddSqrtDivMulMulAdd_myl0_363
+[11/20/2026-00:21:42] [I]        2.73       0.0079       0.0072       0.2   /model/decoder/decoder/layers.3/linear1/MatMul_myl0_364
+[11/20/2026-00:21:42] [I]        1.78       0.0051       0.0051       0.1   __myl_Silu_myl0_365
+[11/20/2026-00:21:42] [I]        2.50       0.0072       0.0072       0.2   __myl_Fc_myl0_366
+[11/20/2026-00:21:42] [I]        2.53       0.0073       0.0072       0.2   __myl_ReshAddMaxMinMeanSubMulMeanAddSqrtDivMulMulAddAdd_myl0_367
+[11/20/2026-00:21:42] [I]        2.53       0.0073       0.0072       0.2   __myl_FcSilu_myl0_368
+[11/20/2026-00:21:42] [I]        2.54       0.0073       0.0072       0.2   __myl_FcSilu_myl0_369
+[11/20/2026-00:21:42] [I]        3.24       0.0093       0.0092       0.2   /model/decoder/decoder/dec_bbox_head.3/layers.2/MatMul_myl0_370
+[11/20/2026-00:21:42] [I]        2.51       0.0072       0.0072       0.2   __myl_AddReshMaxrSubExpSumDivMul_myl0_371
+[11/20/2026-00:21:42] [I]       16.80       0.0484       0.0481       1.2   __myl_Topk_myl0_373
+[11/20/2026-00:21:42] [I]        1.89       0.0054       0.0052       0.1   __myl_Move_myl0_374
+[11/20/2026-00:21:42] [I]        2.19       0.0063       0.0059       0.2   /model/decoder/decoder/lqe_layers.3/ReduceMean_myl0_375
+[11/20/2026-00:21:42] [I]        1.93       0.0055       0.0051       0.1   __myl_Conc_myl0_376
+[11/20/2026-00:21:42] [I]       17.12       0.0494       0.0491       1.3   __myl_ReshMaxrSubExpSumDivMul_myl0_378
+[11/20/2026-00:21:42] [I]        2.40       0.0069       0.0065       0.2   /model/decoder/decoder/integral_3/MatMul_myl0_379
+[11/20/2026-00:21:42] [I]        1.92       0.0055       0.0052       0.1   __myl_SlicReshAddMulAddReshSlicReshAddMulAddReshSlicReshAddMulSubReshSlicReshAddMulSubReshConcEtc_myl0_380
+[11/20/2026-00:21:42] [I]        2.60       0.0075       0.0072       0.2   __myl_Fc_myl0_381
+[11/20/2026-00:21:42] [I]        2.82       0.0081       0.0084       0.2   /model/decoder/decoder/lqe_layers.3/reg_conf/layers.0/MatMul_myl0_383
+[11/20/2026-00:21:42] [I]        1.83       0.0053       0.0052       0.1   __myl_SiluMulSum_myl0_384
+[11/20/2026-00:21:42] [I]        1.78       0.0051       0.0051       0.1   __myl_AddAddReshGathSigmResh_myl0_386
+[11/20/2026-00:21:42] [I]       22.47       0.0648       0.0645       1.7   __myl_Topk_myl0_387
+[11/20/2026-00:21:42] [I]        1.88       0.0054       0.0051       0.1   __myl_ReplReshCastCastDivReshReplCastMulSubReshMulReshMulReshAddReshSubReshReshAddReshSubReshConcEtc_myl0_389
+[11/20/2026-00:21:42] [I]        1.77       0.0051       0.0052       0.1   __myl_Cast_myl0_391
+[11/20/2026-00:21:42] [I]        0.41       0.0012       0.0011       0.0   __mye499947_myl0_394
+[11/20/2026-00:21:42] [I]     1347.08       3.8821       3.8655     100.0   Total
+[11/20/2026-00:21:42] [I] 
+[11/20/2026-00:21:42] [W] The engine uses 2 auxiliary streams, so the "Total" latency may not be accurate because some layers may have run in parallel!
+&&&& PASSED TensorRT.trtexec [TensorRT v101602] [b10] # /usr/bin/trtexec --loadEngine=results/localhost.localdomain/vit/model.engine --iterations=300 --duration=0 --dumpProfile --separateProfileRun --profilingVerbosity=detailed --exportProfile=results/localhost.localdomain/vit/profile.json --exportLayerInfo=results/localhost.localdomain/vit/layers.json
