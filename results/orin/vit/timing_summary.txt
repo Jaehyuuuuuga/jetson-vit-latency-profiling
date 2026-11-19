@@ -1,0 +1,4 @@
+[11/20/2026-00:25:43] [I] Throughput: 38.2237 qps
+[11/20/2026-00:25:43] [I] GPU Compute Time: min = 25.7607 ms, max = 32.334 ms, mean = 26.1607 ms, median = 26.1353 ms, percentile(90%) = 26.3784 ms, percentile(95%) = 26.4517 ms, percentile(99%) = 26.8486 ms
+[11/20/2026-00:25:43] [I] Total GPU Compute Time: 7.84822 s
+[11/20/2026-00:25:43] [W] * Throughput may be bound by Enqueue Time rather than GPU Compute and the GPU may be under-utilized.
